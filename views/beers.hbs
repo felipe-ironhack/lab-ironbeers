@@ -1,14 +1,16 @@
 <div class="beer-list">
 
-        {{#each beers}}
-            <div class="beer-wrapper">
-                 <img src={{image_url}} />
-                <div class="beer-wrapper-info">
-                    <h4>{{name}} </h4>
-                    <p class="tagline-info">{{tagline}} </p>
-                    <p class="description-info">{{description}} </p>
+    {{#each beers}}
+        <div class="beer-wrapper">
+            <a href="/beers/beer-{{id}}">
+                <div class="beer-img-center">
+                    <img src={{image_url}} />
+                    <div class="beer-wrapper-info">
+                        {{> beerpartial}}
+                    </div>
                 </div>
-            </div>   
-        {{/each}}
-  
+            </a>
+        </div>   
+    {{/each}}
+
 </div>

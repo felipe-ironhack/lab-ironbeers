@@ -4,11 +4,7 @@
     <img src={{image_url}} />
 
     <div class="random-beer-info">
-        <h2> {{name}} </h2>
-
-        <p class="tagline-info"> {{tagline}} </p>
-
-        <p class="description-info"> {{description}} </p>
+        {{> beerpartial}}
 
         {{#if food_pairing}}
             <div class="food-pairs-list">
