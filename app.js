@@ -50,7 +50,9 @@ app.get('/beers/beer-:id', (req, res) => {
       res.render('oneBeer', oneBeer[0])
     })
     .catch(error => console.log(error))
+    'test here'
 });
 
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
